@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://mouse.db.elephantsql.com/grfmqmun
+    driver-class-name: org.postgresql.Driver
+    username: grfmqmun
+    password: 45e_prMOa2c-yqzAiJ-1NwUzFQPoX0y7
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+nbpApi:
+  uri: http://api.nbp.pl/api/cenyzlota?format=json
+
+schedulerChangeDetectionServices:
+  cron: 0 0 0 ? * MON-FRI
